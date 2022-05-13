@@ -10,13 +10,13 @@ describe('It should verify social media links', () => {
         cy.url().should('eq', 'https://twitter.com/airportlabs')
     });
     
-    it('the twitter button', () => {
+    it('the linkedin button', () => {
         cy.visit("https://airportlabs.com")
         cy.get(linkedinButton).click()
         cy.url().should('eq', 'https://www.linkedin.com/company/airport-labs')
     });
 
-    it('the twitter button', () => {
+    it('the facebook button', () => {
         cy.visit("https://airportlabs.com")
         cy.get(facebookButton).click()
         cy.url().should('eq', 'https://www.facebook.com/AirportLabs')
